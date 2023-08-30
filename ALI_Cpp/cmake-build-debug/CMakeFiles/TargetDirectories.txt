@@ -1,0 +1,3 @@
+C:/Users/jayka/OneDrive/Desktop/UIC/CS474/project4_CPP_ALI/cmake-build-debug/CMakeFiles/project4_CPP_ALI.dir
+C:/Users/jayka/OneDrive/Desktop/UIC/CS474/project4_CPP_ALI/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jayka/OneDrive/Desktop/UIC/CS474/project4_CPP_ALI/cmake-build-debug/CMakeFiles/rebuild_cache.dir
