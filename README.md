@@ -4,10 +4,10 @@ Toy Assembly level language to find difference between C++ and Ruby
 # CPP based code
 ## =>> DESIGN CHOICES:
 - "Command Line Design pattern" is used to implement the problem. Based on this design, we created below classes:::
-- - "Hardware" class : Is a virtual machine, holds memory, registers and has getters and setters to access/print memory, registers, counter, etc
-  -  "Instruction" as ABSTRACT SUPER CLASS of SUBCLASSES----> Class DEC, Class STR , and all other instructions
-  -  "ALI" class: This reads the program and INVOKES appropriates "Instances" of subclasses of instructions and stores them in source code memory.
-  -  Command line Design ensures that the correct 'instance of Instruction subclass' is selected and stored in the memory
+- "Hardware" class : Is a virtual machine, holds memory, registers and has getters and setters to access/print memory, registers, counter, etc
+-  "Instruction" as ABSTRACT SUPER CLASS of SUBCLASSES----> Class DEC, Class STR , and all other instructions
+-  "ALI" class: This reads the program and INVOKES appropriates "Instances" of subclasses of instructions and stores them in source code memory.
+-  Command line Design ensures that the correct 'instance of Instruction subclass' is selected and stored in the memory
 
 
 ## ===>>> USE OF INHERITANCE and POLYMORPHISM:
@@ -42,7 +42,7 @@ Toy Assembly level language to find difference between C++ and Ruby
  - The subclasses also inherit the method "execute" and further refines it. (incrementing the program counter is executed in Superclass)
  - to_s method is inherited to print the strings
 
-#===>> FLOW OF THE PROGRAM
+## ===>> FLOW OF THE PROGRAM
  - "ALI" creates an instance of "VirtualM" class. This instance is passed as parameter to the Instances of Instructions & its sublcasses
  - Hence, Every instance of "Instruction class & subclasses", operates on the SAME instance of "VirtualM"
  - The flow of the program/ execution is driven by the value of the Program counter
